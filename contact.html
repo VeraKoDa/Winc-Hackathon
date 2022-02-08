@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400&family=Lobster+Two:ital@0;1&family=Neonderthaw&family=Sedgwick+Ave&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neem contact op met KoDaC Travel Moments!</title>
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="body-grid">
+    <header class="header">
+      <figure>
+        <img src="images/Kodac.jpg" alt="zij-aanzicht camper met uitzicht" />
+      </figure>
+    </header>
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html" name="home">Home</a></li>
+        <li><a href="over.html" name="over">Over</a></li>
+        <li><a href="blog.html" name="blog">Blog</a></li>
+        <li><a href="contact.html" name="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <h1>Contact formulier</h1>
+      <h3>Wat leuk dat je contact met ons op wilt nemen!</h3>
+
+      <!-- Formulier op contactpagina -->
+      <div class="form_container">
+        <form name="contact" method="post" data-netlify="true">
+          <div class="row">
+            <p class="col-30"><label> Naam:</label></p>
+            <p class="col-70"><input type="text" name="name" /></p>
+          </div>
+
+          <div class="row">
+            <p class="col-30"><label>E-mail:</label></p>
+            <p class="col-70"><input type="email" name="email" /></p>
+          </div>
+
+          <div class="row">
+            <p class="col-30"><label>Telefoonnummer:</label></p>
+            <p class="col-70"><input type="tel" name="phone" /></p>
+          </div>
+
+          <div class="row">
+            <p class="col-30">Geslacht:</p>
+            <p class="col-70">
+              <label>
+                <input type="radio" value="Man" name="gender" />Man
+              </label>
+              <label>
+                <input type="radio" value="Vrouw" name="gender" />Vrouw
+              </label>
+              <label>
+                <input type="radio" value="Onbekend" name="gender" />Onbekend
+              </label>
+            </p>
+          </div>
+          <div class="row">
+            <p class="col-30"><label>Website:</label></p>
+            <p class="col-70">
+              <input type="url" name="web" value="http://" />
+            </p>
+          </div>
+
+          <div class="row">
+            <p class="col-30"><label>Vragen/opmerkingen</label></p>
+            <p class="col-70">
+              <textarea
+                name="message"
+                placeholder="opmerkingen"
+                rows="10"
+              ></textarea>
+            </p>
+          </div>
+          <hr />
+          <b><u>Favoriet camperland</u></b>
+          <div class="row">
+            <p class="col-30"><label>Nederland</label></p>
+            <p class="col-70"><input type="checkbox" name="nederland" /></p>
+            <p class="col-30"><label>Belgi&euml;</label></p>
+            <p class="col-70"><input type="checkbox" name="belgie" /></p>
+            <p class="col-30"><label>Frankrijk</label></p>
+            <p class="col-70"><input type="checkbox" name="frankrijk" /></p>
+            <p class="col-30"><label>Spanje</label></p>
+            <p class="col-70"><input type="checkbox" name="spanje" /></p>
+            <p class="col-30"><label>Duitsland</label></p>
+            <p class="col-70"><input type="checkbox" name="duitsland" /></p>
+            <p class="col-30"><label>Noorwegen</label></p>
+            <p class="col-70"><input type="checkbox" name="noorwegen" /></p>
+            <p class="col-30"><label>Zweden</label></p>
+            <p class="col-70"><input type="checkbox" name="zweden" /></p>
+          </div>
+          <hr />
+
+          <div class="row">
+            <p class="col-30">
+              <label>Upload hier je <b>mooiste</b> vakantiefoto!</label>
+            </p>
+            <p class="col-70"><input type="file" name="file" /></p>
+          </div>
+          <hr />
+          <div class="row">
+            <input type="reset" width="100px" />
+            <input type="submit" />
+          </div>
+          <br />
+          <br />
+          <!--submit button met tekst "verzenden"-->
+        </form>
+      </div>
+      <!-- Einde formulier op contactpagina -->
+    </main>
+    <div class="sidebar contact">
+      <h3>Contact gegevens:</h3>
+      <address>
+        KoDaC Travel Moments<br />
+        Vakantiepark 14<br />
+        2020 PK HOLIDAY!<br />
+        <a href="mailto:winc@toet-toet.nl">Winc@toet-toet.nl</a><br />
+      </address>
+      <img src="./images/north-pole-post.png" alt="post stempel noorwegen" />
+      <img src="./images/old-phone.png" alt="oude draaitelefoon" />
+    </div>
+    <footer class="footer">
+      <p>&copy;Copyright by Vera</p>
+    </footer>
+  </body>
+</html>

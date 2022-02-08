@@ -1,0 +1,332 @@
+body {
+  background-image: url(../images/noorwegen.JPG);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 10px auto;
+  color: rgb(91, 102, 91);
+  font-family: "Laila";
+}
+
+/* grid layout */
+
+.body-grid {
+  display: grid;
+  height: auto;
+  max-width: 900px;
+  grid-gap: 2px;
+  grid-template-rows: 1fr 0.3fr repeat(3, auto) 0.5fr;
+  grid-template-columns: repeat(3, auto) 225px;
+  grid-template-areas:
+    "h h h h"
+    "n n n n"
+    "m m m s"
+    "m m m s"
+    "m m m s"
+    "f f f f";
+}
+.header {
+  grid-area: h;
+  background-color: white;
+}
+.header img {
+  width: 100%;
+  border-radius: 10px;
+}
+.navigation {
+  grid-area: n;
+  background-color: white;
+  display: flex;
+}
+.main {
+  grid-area: m;
+  background-color: white;
+}
+.sidebar {
+  grid-area: s;
+  background-color: rgb(203, 211, 203);
+}
+.footer {
+  grid-area: f;
+  background-color: #5b665b;
+}
+
+/* einde grid-layout */
+
+/* ============================================================ */
+
+/* Header */
+
+header h1 {
+  margin: 20px 40px;
+  padding: 20px;
+  background-size: 50%;
+}
+
+/* einde Header */
+
+/* ============================================================ */
+
+/* Site Navigatie */
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  font-size: 1.3em;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1.5px dotted gray;
+  border-bottom: 1.5px dotted gray;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(91, 102, 91);
+  padding: 10px;
+}
+nav ul li a:hover {
+  background-color: rgb(91, 102, 91);
+  color: white;
+  border-radius: 5px;
+}
+
+/* einde Site navigatie */
+
+/* ============================================================ */
+
+/* Main */
+h1 {
+  text-align: center;
+  font-size: 25px;
+}
+h3 {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+article {
+  padding: 10px;
+  font-family: "Laila";
+  font-size: 14px;
+}
+article h3 {
+  padding: 0;
+}
+
+article h3.underline {
+  margin-bottom: 0;
+  text-decoration: 1px underline;
+  font-size: 18px;
+}
+
+/* einde Main */
+
+/* ============================================================ */
+
+/* flexbox */
+
+.flexbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.flexbox-blog-head {
+  margin: 10px 10px 5px;
+  background-color: rgba(203, 211, 203, 0.363);
+  border-radius: 10px;
+  text-align: center;
+  order: 0;
+  flex-grow: 1;
+}
+.flexbox-blog {
+  margin: 10px 10px 5px;
+  background-color: rgba(203, 211, 203, 0.363);
+  border-radius: 10px;
+  text-align: center;
+}
+.flexbox-blog img {
+  width: 90%;
+}
+.blog-page {
+  margin: 10px 10px 5px;
+  background-color: rgba(203, 211, 203, 0.363);
+  border-radius: 10px;
+  text-align: center;
+}
+.blog-page img {
+  width: 90%;
+}
+/* einde flexbox */
+
+/* ============================================================ */
+
+/* Sidebar */
+
+.sidebar {
+  display: flex;
+  opacity: 90%;
+  flex-direction: column;
+  justify-content: start;
+}
+.sidebar > h3 {
+  margin-left: 10px;
+  align-items: start;
+}
+
+.sidebar > ul {
+  flex-flow: row wrap;
+  justify-content: start;
+  padding: 10px;
+  margin: 0px 0px;
+}
+.sidebar > ul li {
+  background: url("../images/paw_green.png") no-repeat left center;
+  background-size: 20px;
+  list-style-position: inside;
+  padding: 10px;
+  list-style-type: none;
+}
+.sidebar > ul li a {
+  font-size: 0.8em;
+  margin: 20px;
+  text-decoration: none;
+  color: rgb(91, 102, 91);
+}
+
+.sidebar.home {
+  flex: 1;
+  justify-content: center;
+}
+.sidebar.home figure {
+  margin: 5px;
+}
+.sidebar.home img {
+  width: 100%;
+}
+
+.sidebar.contact {
+  justify-content: space-evenly;
+  align-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.sidebar.contact img {
+  width: 70px;
+  order: 1;
+}
+/* einde Sidebar */
+
+/* ============================================================ */
+
+/* Footer */
+
+footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+footer p {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+/* einde Footer */
+
+/* ============================================================ */
+
+/* form */
+
+.form_container {
+  margin: 10px;
+  padding: 10px;
+  color: #5b665b;
+  background-color: #cbd3cb80;
+  border-radius: 5px;
+}
+form input {
+  border: 1px dotted #5b665b;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+}
+form textarea {
+  border: 1px dotted #5b665b;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+}
+form input:focus {
+  border: 2px dotted rgb(91, 102, 91);
+  background-color: rgb(203, 211, 203);
+  border-radius: 5px;
+}
+form input[type="submit"],
+[type="reset"] {
+  background-color: #5b665b;
+  color: white;
+  padding: 8px 20px;
+  width: 100px;
+}
+.col-30 {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
+
+.col-70 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* einde form */
+
+/* ============================================================ */
+
+/* @media queries */
+
+@media screen and (max-width: 600px) {
+  .body-grid {
+    grid-template-areas:
+      "h h h h"
+      "n n n n"
+      "m m m m"
+      "m m m m"
+      "s s s s"
+      "f f f f";
+  }
+  nav ul {
+    justify-content: space-between;
+  }
+  .sidebar {
+    flex-direction: row;
+  }
+  .col-30,
+  .col-70,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .flexbox-container {
+    flex-flow: row wrap;
+  }
+  .flexbox-blog {
+    max-width: 40%;
+  }
+}
